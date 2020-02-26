@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "apanel":"../../components/apanel/apanel",
+    "apanel2":"../../components/apanel2/apanel2"
+  }
+}

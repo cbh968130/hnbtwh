@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "asheet":"../asheet/asheet",
+    "arow3":"../arow3/arow3"
+  }
+}

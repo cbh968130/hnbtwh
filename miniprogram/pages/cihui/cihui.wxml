@@ -1,0 +1,33 @@
+<!--miniprogram/pages/ziyin/ziyin.wxml-->
+<view class="blank"></view>
+<view class="pic">
+<image class="logo" src="/image/logo.jpg"></image>
+</view>
+<view class="blank"></view>
+<view class="title">词汇查询</view>
+<view class="blank"></view>
+<view class="search">
+  <view class="blanky"></view>
+  <input class="input" placeholder="输入关键字" confirm-type="search" bindinput="keyInput" bindconfirm="find" ></input>
+  <button class="button" bindtap="find" >搜</button>
+  <view class="blanky"></view>
+</view>
+
+<view class="blank"></view>
+
+<view class="forRadio">
+<radio-group name="type" bindchange="changeType">
+<label class = "forType"><radio value="CiTiao" checked="True"/>查词条 </label>
+<label class = "forType"><radio value="Shiyi"/>查释义</label>
+</radio-group>
+</view>
+
+<view class="blank"></view>
+
+<view wx:for="{{inputDetail}}" wx:key="index">
+<apanel4 input="{{item.uid}}" adjInput="{{item.cha}}" shiyi="{{item.shiyi}}" liju="{{item.liju}}" ifimg="{{item.ifimg}}" img="{{item.img}}"/>
+</view>
+
+<view wx:for="{{inputList}}" wx:key="index">
+<alist input="{{item}}" bindshow="showDetail"/>
+</view>

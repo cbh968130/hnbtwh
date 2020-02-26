@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "asheet4": "../asheet4/asheet4",
+    "arow4": "../arow4/arow4"
+  }
+}

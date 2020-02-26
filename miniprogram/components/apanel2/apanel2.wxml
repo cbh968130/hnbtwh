@@ -1,0 +1,10 @@
+<view class="apanel2">
+<view class="blank"></view>
+<arow2 didian="方言点" cha="繁（简）" ipa="IPA" pinyin="吴拼"/>
+
+<view wx:for="{{list}}" wx:key="index">
+<asheet2 id="{{item}}" didian="{{item}}" input="{{input}}"/>
+</view>
+
+</view>
+<view class="blank"></view>

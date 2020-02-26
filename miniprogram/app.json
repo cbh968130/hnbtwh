@@ -1,0 +1,35 @@
+{
+  "pages": [
+    "pages/ziyin/ziyin",
+    "pages/cihui/cihui",
+    "pages/shuoming/shuoming"
+  ],
+  "window": {
+    "backgroundColor": "#fff",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "潮人语·方言辞典",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#000",
+    "selectedColor": "#4169E1",
+    "list": [
+      {
+        "pagePath": "pages/ziyin/ziyin",
+        "text": "字音"
+      },
+      {
+        "pagePath": "pages/cihui/cihui",
+        "text": "词汇"
+      },
+      {
+         "pagePath": "pages/shuoming/shuoming",
+          "text": "关于"
+      }
+    ]
+  }
+
+}
+

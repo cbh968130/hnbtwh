@@ -1,0 +1,12 @@
+<wxs src="../../filter/filter.wxs" module="tools"/>
+
+<view class="arow">
+  <view class="blanky"></view>
+  <text class="address">{{didian}}</text>
+  <text class="ipa">{{ipa}}</text>
+  <text class="prons">{{pinyin}}</text>
+  <text class="beizhu">{{beizhu}}</text>
+  <view class="blanky"></view>
+  <view class="forbutton"><button class="fayin" plain="true"  bindtap="playVoice">▶</button></view>
+  <view class="blanky"></view>
+</view>

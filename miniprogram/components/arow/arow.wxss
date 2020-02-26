@@ -1,0 +1,50 @@
+
+.arow{
+  width:750rpx;
+  display:flex;
+}
+
+.address{
+  width:140rpx;
+  height:70rpx;
+  font-size:30rpx;
+}
+
+.ipa{
+  width:150rpx;
+  height:70rpx;
+  font-size:30rpx;
+  font-style: "Times New Roman";
+}
+
+.prons{
+  width:160rpx;
+  height:70rpx;
+  font-size:30rpx;
+  font-style: "Times New Roman";
+}
+
+.beizhu{
+  width:180rpx;
+  font-size:30rpx;
+}
+
+
+.fayin{
+  width:50rpx;
+  height:50rpx;
+  line-height: 50rpx;
+  font-size:20rpx;
+  padding-left: 16rpx;
+  border-radius: 40rpx;
+}
+
+.blanky{
+  width:30rpx;
+  height:100%;
+}
+
+.forbutton{
+  width:70rpx;
+  height:70rpx;
+}

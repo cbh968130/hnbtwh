@@ -1,0 +1,8 @@
+<view class="arow">
+  <view class="blanky"></view>
+  <view class="address">{{didian}}</view>
+  <view class="chars">{{cha}}</view>
+  <view class="prons">{{ipa}}</view>
+  <view class="prons">{{pinyin}}</view>
+  <view class="blanky"></view>
+</view>

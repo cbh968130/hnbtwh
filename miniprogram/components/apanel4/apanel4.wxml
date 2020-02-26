@@ -1,0 +1,29 @@
+<view class="apanel">
+<view class="blank"></view>
+<view class="head">{{adjInput}}</view>
+<view class="blank"></view>
+<view wx:if="{{ifimg>0}}">
+<view class="forimage">
+<image src="cloud://wugniu-n4jmh.7775-wugniu-n4jmh-1301204702/image/{{img}}.jpg" class="aimage"></image>
+</view>
+<view class="blank"></view>
+</view>
+<view class="forshiyi">
+<view class="blanky"></view>
+<text class="shiyi">{{shiyi}}\n{{liju}}</text>
+<view class="blanky"></view>
+</view>
+<view class="blank"></view>
+<view class="blank"></view>
+<arow4 class="first" didian="方言点" ipa="IPA" pinyin="吴拼"/>
+
+<view wx:for="{{list}}" wx:key="index">
+<asheet4 id="{{item}}" didian="{{item}}" input="{{input}}"/>
+</view>
+
+<view class="blank"></view>
+
+<view class="blanky"></view>
+<view class="blank"></view>
+</view>
+<view class="blank"></view>

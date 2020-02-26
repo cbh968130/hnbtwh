@@ -1,0 +1,25 @@
+<view class="apanel">
+<view class="blank"></view>
+<view class="head">{{adjInput}}</view>
+<view class="forshiyi">
+<view class="blanky"></view>
+<text class="shiyi">{{shiyi}}</text>
+<view class="blanky"></view>
+</view>
+<view class="blank"></view>
+<view class="blank"></view>
+<arow3 class="first" didian="方言点" ipa="IPA" pinyin="吴拼" beizhu="备注" fayin="参考"/>
+
+<view wx:for="{{list}}" wx:key="index">
+<asheet id="{{item}}" didian="{{item}}" input="{{input}}" bindout="setMarkers"/>
+</view>
+
+<view class="blank"></view>
+<view class="formap">
+<view class="blanky"></view>
+<map longitude="120.609140" latitude="30.458580" scale="9" style="width: 700rpx; height: 500rpx;" markers="{{markers}}"subkey="5ZGBZ-VBJCD-CSO4R-HJO6I-WFKY6-GBBKV" ></map>
+</view>
+<view class="blanky"></view>
+<view class="blank"></view>
+</view>
+<view class="blank"></view>

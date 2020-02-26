@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "apanel4": "../../components/apanel4/apanel4",
+    "alist":"../../components/alist/alist"
+  }
+}

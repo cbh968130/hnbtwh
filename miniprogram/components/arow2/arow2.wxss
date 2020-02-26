@@ -1,0 +1,36 @@
+
+.arow{
+  width:750rpx;
+  height:90rpx;
+  display:flex;
+}
+
+.address{
+  width:140rpx;
+  height:90rpx;
+  font-size:30rpx;
+}
+
+.chars{
+  width:220rpx;
+  font-size:30rpx;
+}
+
+.prons{
+  width:150rpx;
+  height:90rpx;
+  font-size:30rpx;
+  font-style: "Times New Roman";
+}
+
+.beizhu{
+  width:300rpx;
+  height:90rpx;
+  font-size:30rpx;
+}
+
+.blanky{
+  width:30rpx;
+  height:100%;
+  
+}

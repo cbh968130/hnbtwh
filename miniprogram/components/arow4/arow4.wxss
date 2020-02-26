@@ -1,0 +1,36 @@
+
+.arow{
+  width:750rpx;
+  display:flex;
+}
+
+.address{
+  width:160rpx;
+  height:70rpx;
+  font-size:30rpx;
+}
+
+.ipa{
+  width:280rpx;
+  height:70rpx;
+  font-size:30rpx;
+  font-style: "Times New Roman";
+}
+
+.prons{
+  width:250rpx;
+  height:70rpx;
+  font-size:30rpx;
+  font-style: "Times New Roman";
+}
+
+
+.blanky{
+  width:30rpx;
+  height:100%;
+}
+
+.forbutton{
+  width:70rpx;
+  height:70rpx;
+}

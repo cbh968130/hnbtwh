@@ -1,0 +1,25 @@
+<!--miniprogram/pages/ziyin/ziyin.wxml-->
+<view class="blank"></view>
+<view class="pic">
+<image class="logo" src="/image/logo.jpg"></image>
+</view>
+<view class="blank"></view>
+<view class="title">字音查询</view>
+<view class="blank"></view>
+<view class="search">
+  <view class="blanky"></view>
+  <input class="input" placeholder="输入汉字或吴拼" confirm-type="search" bindinput="keyInput" bindconfirm="find"></input>
+  <button class="button" bindtap="find" >搜</button>
+  <view class="blanky"></view>
+</view>
+
+<view class="blank"></view>
+<view class="blank"></view>
+
+<view wx:for="{{inputSplit}}" wx:key="index">
+<apanel input="{{item}}"/>
+</view>
+
+<view wx:for="{{inputLetter}}" wx:key="index">
+<apanel2 input="{{item}}"/>
+</view>

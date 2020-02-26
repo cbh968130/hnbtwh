@@ -1,0 +1,8 @@
+<view wx:for="{{output}}" wx:key="index">
+  <view wx:if="{{index<1}}">
+    <arow didian="{{didian}}" didian2="{{didian}}" ipa="{{item.ipa}}" pinyin="{{item.pinyin}}" beizhu="{{item.beizhu}}"/>
+  </view>
+  <view wx:else>
+    <arow  didian="" didian2="{{didian}}" ipa="{{item.ipa}}" pinyin="{{item.pinyin}}" beizhu="{{item.beizhu}}"/>
+  </view>
+</view>

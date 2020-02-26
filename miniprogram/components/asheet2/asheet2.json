@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "arow2": "../arow2/arow2"
+  }
+}

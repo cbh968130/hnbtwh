@@ -1,0 +1,42 @@
+
+.arow{
+  width:750rpx;
+  display:flex;
+}
+
+.address{
+  width:140rpx;
+  height:70rpx;
+  font-size:30rpx;
+}
+
+.ipa{
+  width:150rpx;
+  height:70rpx;
+  font-size:30rpx;
+  font-style: "Times New Roman";
+}
+
+.prons{
+  width:160rpx;
+  height:70rpx;
+  font-size:30rpx;
+  font-style: "Times New Roman";
+}
+
+.beizhu{
+  width:180rpx;
+  font-size:30rpx;
+}
+
+
+.fayin{
+  width:70rpx;
+  height:70rpx;
+  font-size:30rpx;
+}
+
+.blanky{
+  width:30rpx;
+  height:100%;
+}
