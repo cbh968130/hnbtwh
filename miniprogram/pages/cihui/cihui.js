@@ -74,7 +74,17 @@ Page({
   showDetail(e){
     this.setData({
       inputDetail:[e.detail],
-      inputList:[]
+      inputCache: this.data.inputList
+    })
+    this.setData({
+      inputList: []
+    })
+  },
+
+  returnList(e){
+    this.setData({
+      inputList:this.data.inputCache,
+      inputDetail:[]
     })
   },
 

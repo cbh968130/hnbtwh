@@ -27,3 +27,5 @@
 <view class="blank"></view>
 </view>
 <view class="blank"></view>
+
+<view class="forbutton"><button class="fanhui" plain="true"  bindtap="return">返回</button></view>

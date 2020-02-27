@@ -52,3 +52,20 @@ margin-left: 150rpx
   width:450rpx;
   height:300rpx;
 }
+
+.forbutton{
+  width:750rpx;
+  height:70rpx;
+  display:flex;
+  justify-content: center;
+}
+
+.fanhui{
+  width:90rpx;
+  height:70rpx;
+  line-height: 70rpx;
+  font-size:35rpx;
+  padding-left: 0rpx;
+  padding-right: 0rpx;
+  border-radius: 0rpx;
+}
