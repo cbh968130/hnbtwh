@@ -62,5 +62,14 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline: function () {
+
   }
+
+  
 })

@@ -8,12 +8,18 @@
 <view class="blank"></view>
 <view class="search">
   <view class="blanky"></view>
-  <input class="input" placeholder="输入汉字或吴拼" confirm-type="search" bindinput="keyInput" bindconfirm="find"></input>
+  <input class="input" placeholder="输入汉字或吴拼（支持多个汉字）" confirm-type="search" bindinput="keyInput" bindconfirm="find"></input>
   <button class="button" bindtap="find" >搜</button>
   <view class="blanky"></view>
 </view>
 
 <view class="blank"></view>
+
+
+<view wx:for="{{splitLen}}" wx:key="index">
+  <view class="res">查询到{{splitLen[0]}}个结果：</view>
+</view>
+
 <view class="blank"></view>
 
 <view wx:for="{{inputSplit}}" wx:key="index">

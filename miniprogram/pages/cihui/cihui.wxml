@@ -8,7 +8,7 @@
 <view class="blank"></view>
 <view class="search">
   <view class="blanky"></view>
-  <input class="input" placeholder="输入关键字" confirm-type="search" bindinput="keyInput" bindconfirm="find" ></input>
+  <input class="input" placeholder="输入关键词" confirm-type="search" bindinput="keyInput" bindconfirm="find" ></input>
   <button class="button" bindtap="find" >搜</button>
   <view class="blanky"></view>
 </view>

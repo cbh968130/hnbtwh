@@ -40,7 +40,7 @@ Component({
       innerAudioContext.autoplay = true
       innerAudioContext.src = "cloud://wugniu-n4jmh.7775-wugniu-n4jmh-1301204702/"+didian+"/"+pinyin+".wav"
       innerAudioContext.onPlay(() => {
-        console.log('开始播放')
+        console.log('开始播放'+didian+"的"+pinyin)
       })
 
     }

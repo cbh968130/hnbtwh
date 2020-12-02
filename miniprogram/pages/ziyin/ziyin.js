@@ -10,6 +10,7 @@ Page({
   data: {
     inputValue:'',
     inputSplit:[],
+    splitLen:[],
     inputLetter:[]
   },
 
@@ -17,6 +18,7 @@ Page({
     this.setData({
       inputValue: e.detail.value,
       inputSplit: [],
+      splitLen:[],
       inputLetter: []
     })
   },
@@ -54,7 +56,8 @@ Page({
       }
 
       this.setData({
-        inputSplit: outText.split(",")
+        inputSplit: outText.split(","),
+        splitLen: [outText.split(",").length]
       })
 
     }
@@ -128,6 +131,13 @@ Page({
    * 用户点击右上角分享
    */
   onShareAppMessage: function () {
+
+  },
+
+  /**
+   * 用户分享到朋友圈
+   */
+  onShareTimeline: function () {
 
   }
 })
