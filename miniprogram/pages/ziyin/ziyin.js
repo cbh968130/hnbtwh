@@ -27,39 +27,43 @@ Page({
    * 若输入内容有英文则认为是字音反查
    */
   find() {
-    var input = this.data.inputValue
-    var con = /[A-Za-z]+/
-    var res = con.test(input)
-    if (res){
-      this.setData({
-        inputLetter: [input]
-      })
-    }
-    else {
-      var outText = ""
-      var text = input.split("")
-      var len = text.length
-      var hanzi = ""
-      var result = ""
-      for (var i = 0; i < len; i++) {
-        hanzi = text[i]
-        result = this.data.ajson[hanzi]
-        if (typeof (result) == "undefined") {
-          outText = outText + hanzi.convertSimpleToTrad()
-        }
-        else {
-          outText = outText + result
-        }
-        if (i < len - 1){
-          outText = outText + ","
-        }
+
+    if (this.data.inputValue!=''){
+
+      var input = this.data.inputValue
+      var con = /[A-Za-z]+/
+      var res = con.test(input)
+      if (res){
+        this.setData({
+          inputLetter: [input]
+        })
       }
+      else {
+        var outText = ""
+        var text = input.split("")
+        var len = text.length
+        var hanzi = ""
+        var result = ""
+        for (var i = 0; i < len; i++) {
+          hanzi = text[i]
+          result = this.data.ajson[hanzi]
+          if (typeof (result) == "undefined") {
+            outText = outText + hanzi.convertSimpleToTrad()
+          }
+          else {
+            outText = outText + result
+          }
+          if (i < len - 1){
+            outText = outText + ","
+          }
+        }
 
-      this.setData({
-        inputSplit: outText.split(","),
-        splitLen: [outText.split(",").length]
-      })
+        this.setData({
+          inputSplit: outText.split(","),
+          splitLen: [outText.split(",").length]
+        })
 
+      }
     }
   },
 

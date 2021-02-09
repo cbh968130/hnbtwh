@@ -1,8 +1,8 @@
 <view class="arow">
   <view class="blanky"></view>
-  <view class="address">{{didian}}</view>
-  <view class="chars">{{cha}}</view>
-  <view class="prons">{{ipa}}</view>
-  <view class="prons">{{pinyin}}</view>
+  <text class="address" user-select="{{true}}">{{didian}}</text>
+  <text class="chars" user-select="{{true}}">{{cha}}</text>
+  <text class="prons" user-select="{{true}}">{{ipa}}</text>
+  <text class="prons" user-select="{{true}}">{{pinyin}}</text>
   <view class="blanky"></view>
 </view>

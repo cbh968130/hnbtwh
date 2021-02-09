@@ -1,10 +1,10 @@
 <wxs src="../../filter/filter.wxs" module="tools"/>
 
 <view class="arow">
-  <view class="blanky"></view>
-  <text class="address">{{didian}}</text>
-  <text class="ipa">{{ipa}}</text>
-  <text class="prons">{{pinyin}}</text>
+  <view class="blanky" user-select="{{true}}"></view>
+  <text class="address" user-select="{{true}}">{{didian}}</text>
+  <text class="ipa" user-select="{{true}}">{{ipa}}</text>
+  <text class="prons" user-select="{{true}}">{{pinyin}}</text>
   <view class="blanky"></view>
   <view class="blanky"></view>
 </view>

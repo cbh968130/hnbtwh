@@ -2,10 +2,10 @@
 
 <view class="arow">
   <view class="blanky"></view>
-  <text class="address">{{didian}}</text>
-  <text class="ipa">{{ipa}}</text>
-  <text class="prons">{{pinyin}}</text>
-  <text class="beizhu">{{beizhu}}</text>
+  <text class="address" user-select="{{true}}">{{didian}}</text>
+  <text class="ipa" user-select="{{true}}">{{ipa}}</text>
+  <text class="prons" user-select="{{true}}">{{pinyin}}</text>
+  <text class="beizhu" user-select="{{true}}">{{beizhu}}</text>
   <view class="blanky"></view>
   <view class="forbutton"><button class="fayin" plain="true"  bindtap="playVoice">▶</button></view>
   <view class="blanky"></view>

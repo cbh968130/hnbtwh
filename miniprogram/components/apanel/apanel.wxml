@@ -1,9 +1,12 @@
 <view class="apanel">
 <view class="blank"></view>
-<view class="head">{{adjInput}}</view>
+<view class="head">
+  <text user-select="{{true}}">{{adjInput}}
+  </text>
+  </view>
 <view class="forshiyi">
 <view class="blanky"></view>
-<text class="shiyi">{{shiyi}}</text>
+<text class="shiyi" user-select="{{true}}">{{shiyi}}</text>
 <view class="blanky"></view>
 </view>
 <view class="blank"></view>

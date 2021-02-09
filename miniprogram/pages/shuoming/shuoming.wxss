@@ -1,16 +1,18 @@
 .pic{
-  width:750rpx;
   display:flex;
   justify-content: center
 }
 
 .blank{
-  width:100%;
-  height:100rpx;
+  height:50rpx;
 }
 
 .pic1{
-  width:750rpx;
-  height:1900rpx;
+  width:300rpx;
+  height:300rpx;
 }
 
+.context{
+  margin:30rpx;
+  line-height:200%;
+}

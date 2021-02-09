@@ -9,15 +9,18 @@ Page({
     inputValue: '',
     inputDetail: [],
     inputList: [],
-    type:"CiTiao"
+    type:"CiTiao",
+    ifRes:[]
   },
 
   keyInput(e) {
     this.setData({
       inputValue: e.detail.value,
       inputDetail: [],
-      inputList: []
+      inputList: [],
+      ifRes: []
     })
+
   },
   
   changeType(e){
@@ -26,46 +29,79 @@ Page({
       inputDetail: [],
       inputList: []
     })
+
+    if (this.data.inputValue != ''){
+      this.find()
+    }
+
   },
 
   find() {
-    var input = this.data.inputValue
 
-    const col = db.collection("ShiYiC")
+    if (this.data.inputValue != ''){
 
-/**
- * 根据勾选搜索词条和释义
- */
-    if (this.data.type == "CiTiao"){
+      var input = this.data.inputValue
 
-      col.where({
-        cha:{
-          $regex:'.*'+input,
-          $options:'i'
-        }
-      }).get().then(res=>{
-        if (typeof(res.data)!="undefined"){
-          this.setData({
-            inputDetail:[],
-            inputList:res.data
-          })
-        }
+      const col = db.collection("ShiYiC")
+
+      this.setData({
+        inputDetail: [],
+        inputList: []
       })
-    } 
-    else{
-      col.where({
-        shiyi2: {
-          $regex: '.*' + input,
-          $options: 'i'
-        }
-      }).get().then(res => {
-        if (typeof (res.data) != "undefined") {
-          this.setData({
-            inputDetail:[],
-            inputList: res.data
-          })
-        }
-      })
+
+  /**
+   * 根据勾选搜索词条和释义
+   */
+      if (this.data.type == "CiTiao"){
+
+        col.where({
+          cha:{
+            $regex:'.*'+input,
+            $options:'i'
+          }
+        }).get().then(res=>{
+
+          console.log(res.data.length)
+
+          if (res.data.length != 0){
+            this.setData({
+              inputDetail:[],
+              inputList:res.data
+            })
+          }
+
+          else{
+            this.setData({
+              ifRes: ["没有查询到结果"]
+            })
+          }
+        })
+      } 
+      else{
+        col.where({
+          shiyi2: {
+            $regex: '.*' + input,
+            $options: 'i'
+          }
+        }).get().then(res => {
+
+          console.log(res.data.length)
+
+          if (res.data.length != 0) {
+            this.setData({
+              inputDetail:[],
+              inputList: res.data
+            })
+          }
+          
+          else{
+            this.setData({
+              ifRes: ["没有查询到结果"]
+            })
+          }
+        })
+      }
+
     }
 
 
@@ -74,16 +110,15 @@ Page({
   showDetail(e){
     this.setData({
       inputDetail:[e.detail],
-      inputCache: this.data.inputList
     })
-    this.setData({
-      inputList: []
+
+    wx.pageScrollTo({ //回到顶部
+      scrollTop: 200
     })
   },
 
   returnList(e){
     this.setData({
-      inputList:this.data.inputCache,
       inputDetail:[]
     })
   },

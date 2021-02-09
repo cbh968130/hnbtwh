@@ -1,7 +1,7 @@
 
 <view class="alist">
   <view class="blanky"></view>
-  <text class="citiao">{{input.cha}}</text>
+  <text class="citiao" user-select="{{true}}">{{input.cha}}</text>
   <view class="blanky2"></view>
   <view class="forbutton"><button class="chakan" plain="true"  bindtap="forDetail">查看</button></view>
   <view class="blanky"></view>

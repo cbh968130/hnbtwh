@@ -19,7 +19,22 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    wx.cloud.downloadFile({
+      fileID: 'cloud://wugniu-n4jmh.7775-wugniu-n4jmh-1301204702/shuoming.txt', // 文件 ID
+      success: res => {
+        // 返回临时文件路径
+        wx.getFileSystemManager().readFile({
+          filePath: res.tempFilePath,
+          encoding: 'utf-8',
+          success: res => {
+            this.setData({
+              context: res.data
+            })
+          }
+        })
+      },
+      fail: console.error
+    })
   },
 
   /**
