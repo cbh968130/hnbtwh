@@ -39,7 +39,7 @@ Page({
         })
       }
       else {
-        var outText = ""
+        var outText = []
         var text = input.split("")
         var len = text.length
         var hanzi = ""
@@ -47,20 +47,26 @@ Page({
         for (var i = 0; i < len; i++) {
           hanzi = text[i]
           result = this.data.ajson[hanzi]
+
           if (typeof (result) == "undefined") {
-            outText = outText + hanzi.convertSimpleToTrad()
+            if (outText.indexOf(hanzi.convertSimpleToTrad()) == -1){
+              outText.push(hanzi.convertSimpleToTrad())
+            }
           }
           else {
-            outText = outText + result
+            var cacheText = result.split(',')
+            for (var j = 0; j < cacheText.length; j++){
+              if (outText.indexOf(cacheText[j]) == -1){
+                outText.push(cacheText[j])
+              }
+            }
           }
-          if (i < len - 1){
-            outText = outText + ","
-          }
+
         }
 
         this.setData({
-          inputSplit: outText.split(","),
-          splitLen: [outText.split(",").length]
+          inputSplit: outText,
+          splitLen: [outText.length]
         })
 
       }
